@@ -68,4 +68,4 @@ For failed test cases it will take a screenshot aswell at the point of failure.
 allure generate allure-results --clean -o allure-report
 allure serve allure-results
 ```
-### N.B: I can't Report Generate because OrangeHRM is a open Source platfrom and Data all time changes thats why i can't generate report.
+#### N.B: I can't Report Generate because OrangeHRM is a open Source platfrom and Data all time changes thats why i can't generate report.
