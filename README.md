@@ -3,8 +3,8 @@
 ### This is a complete project where a OrangeHRM site is automated by writing test suites using selenium-webdriver and TestNg as testing framework.
 The following key modules are automated:
 
-#### Login
-#### Recruitment
+*** Login
+*** Recruitment
      * Candidates
         * Add Candidate
         * Search Candidates
@@ -12,11 +12,11 @@ The following key modules are automated:
         * Search Vacancies
         * Add Vacancices
         * Create Vacancies
-#### PIM
+*** PIM
      * Add Employee
      * Edit Employee
      * Search Employee
-#### Time
+*** Time
      * Attendance
         * Employee Attendance Records
      * Customers
@@ -27,7 +27,7 @@ The following key modules are automated:
      * Reports
         * View Employee Records
         * View Project Records
-#### Leave
+*** Leave
      * Apply
         * Apply Leave
      * Assign Leave
