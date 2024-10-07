@@ -5,10 +5,37 @@ The following key modules are automated:
 
 * Login
 * Recruitment
-* * Candidates
-  * * Add Candidate
-    * Search Candidates
+     * Candidates
+        * Add Candidate
+        * Search Candidates
+     * Vacancies
+        * Search Vacancies
+        * Add Vacancices
+        * Create Vacancies
 * PIM
+     * Add Employee
+     * Edit Employee
+     * Search Employee
+* Time
+     * Attendance
+        * Employee Attendance Records
+     * Customers
+        * Add Customers
+        * Edit Customers
+     * Projects
+        * Search Project
+     * Reports
+        * View Employee Records
+        * View Project Records
+* Leave
+     * Apply
+        * Apply Leave
+     * Assign Leave
+        * Assign Leave 
+     * Entitlements
+        * Add Entitlements
+        * Leave Entitlements
+        * My Leave Eentitlements               
 
 For failed test cases it will take a screenshot aswell at the point of failure.
 
