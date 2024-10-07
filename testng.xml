@@ -1,0 +1,102 @@
+<suite thread-count="1" verbose="1" name="OrangeHRM portal automation">
+    <test name="OrangeHRM portal login">
+        <classes>
+            <class name="TestRunner.Login.LoginTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Recruitment Candidates for Search">
+        <classes>
+            <class name="TestRunner.Recruitment.Candidates.CandidatesSearchTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Recruitment for Add Candidates">
+        <classes>
+            <class name="TestRunner.Recruitment.Candidates.AddCandidatesTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Recruitment Vacancies for Search">
+        <classes>
+            <class name="TestRunner.Recruitment.Vacancies.SearchVacanciesTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Recruitment for Add Vacancies">
+        <classes>
+            <class name="TestRunner.Recruitment.Vacancies.AddVacancyTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Recruitment for Edit Vacancies">
+        <classes>
+            <class name="TestRunner.Recruitment.Vacancies.EditVacancyTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal PIM for Search">
+        <classes>
+            <class name="TestRunner.PIM.SearchEmpTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal PIM for Add Employee">
+        <classes>
+            <class name="TestRunner.PIM.AddEmployeeTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal PIM for Edit Employee">
+        <classes>
+            <class name="TestRunner.PIM.EditEmployeeTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for Employee Attendance Records">
+        <classes>
+            <class name="TestRunner.Time.Attendance.EmpAttendanceRecordsTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for Add Customers">
+        <classes>
+            <class name="TestRunner.Time.Customers.AddCustomerTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for Edit Customers">
+        <classes>
+            <class name="TestRunner.Time.Customers.EditCustomerTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for Search Projects">
+        <classes>
+            <class name="TestRunner.Time.Projects.SearchProjectsTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for View Project Reports">
+        <classes>
+            <class name="TestRunner.Time.Reports.ViewProjectReportTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Time for View Employee Reports">
+        <classes>
+            <class name="TestRunner.Time.Reports.ViewEmployeeReportTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Leave for Apply">
+        <classes>
+            <class name="TestRunner.Leave.Apply.ApplyLeaveTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Leave for Assign">
+        <classes>
+            <class name="TestRunner.Leave.AssignLeave.AssignLeaveTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Leave for Add Leave Entitlements">
+        <classes>
+            <class name="TestRunner.Leave.Entitlements.AddLeaveEntitlementTestRunner"/>
+        </classes>
+    </test>
+    <test name="OrangeHRM portal Leave for Leave Entitlements">
+    <classes>
+        <class name="TestRunner.Leave.Entitlements.LeaveEntitlementsTestRunner"/>
+    </classes>
+</test>
+    <test name="OrangeHRM portal Leave for My Leave Entitlements">
+        <classes>
+            <class name="TestRunner.Leave.Entitlements.MyLeaveEntitlementsTestRunner"/>
+        </classes>
+    </test>
+</suite>
