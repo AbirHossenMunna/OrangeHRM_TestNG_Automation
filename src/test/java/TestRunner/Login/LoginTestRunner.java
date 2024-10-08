@@ -27,7 +27,6 @@ public class LoginTestRunner extends Setup {
 
     @Test(priority = 1, description = "User tries to login with blank username but blank password")
     public void doLoginWithBlankUserNameAndValidPassword() throws IOException, ParseException, InterruptedException {
-        Thread.sleep(3000);
         loginPage = new LoginPage(driver);
         utils = new Utils();
         utils.getUserCreds(1);
@@ -35,11 +34,12 @@ public class LoginTestRunner extends Setup {
         Assert.assertTrue(ValidationMessage.contains("Required"));
         Allure.description("User tries to login with invalid username and valid password" +
                 "User will not be allowed to login and 'Required' will be prompted");
+        Thread.sleep(3000);
+        loginPage.clearCreds();
     }
 
     @Test(priority = 2, description = "User tries to login with correct username but blank password")
     public void doLoginWithValidUserNameAndBlankPassword() throws IOException, ParseException, InterruptedException {
-        Thread.sleep(3000);
         loginPage = new LoginPage(driver);
         utils = new Utils();
         utils.getUserCreds(2);
@@ -47,10 +47,11 @@ public class LoginTestRunner extends Setup {
         Assert.assertTrue(ValidationMessage.contains("Required"));
         Allure.description("User tries to login with valid username and blank password" +
                 "User will not be allowed to login and 'Required' will be prompted");
+        Thread.sleep(3000);
+        loginPage.clearCreds();
     }
     @Test(priority = 3, description = "User tries to login with incorrect username but correct password")
     public void doLoginWithInvalidUserNameAndValidPassword() throws IOException, ParseException, InterruptedException {
-        Thread.sleep(3000);
         loginPage = new LoginPage(driver);
         utils = new Utils();
         utils.getUserCreds(3);
@@ -58,6 +59,8 @@ public class LoginTestRunner extends Setup {
         Assert.assertTrue(isGotText.contains("Invalid credentials"));
         Allure.description("User tries to login with Invalid username and correct password" +
                 "User will not be allowed to login and 'Invalid credentials' will be prompted");
+        Thread.sleep(3000);
+        loginPage.clearCreds();
     }
     @Test(priority = 4, description = "User tries to login with correct username but incorrect password")
     public void doLoginWithValidUserNameAndInvalidPassword() throws IOException, ParseException, InterruptedException {
@@ -72,7 +75,8 @@ public class LoginTestRunner extends Setup {
     }
 
     @Test(priority = 6, description = "User gives valid credentials and login is successful")
-    public void doLoginWithValidCredential() throws IOException, ParseException {
+    public void doLoginWithValidCredential() throws IOException, ParseException, InterruptedException {
+        Thread.sleep(3000);
         loginPage = new LoginPage(driver);
         utils = new Utils();
         utils.getUserCreds(5);

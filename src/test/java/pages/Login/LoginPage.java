@@ -57,45 +57,23 @@ public class LoginPage {
 
     public String doLoginWithValidUserNameAndBlankPassword(String username, String password) throws InterruptedException {
         txtUserName.sendKeys(username);
-        StringBuilder loop = new StringBuilder(String.valueOf(txtPassword));
-        length = loop.length();
-        for (i = 0; i <= length; i++) {
-            txtPassword.sendKeys(Keys.BACK_SPACE);
-        }
+        Thread.sleep(2000);
         txtPassword.sendKeys(password);
         btnLogin.click();
         return inLineErrorMsg.getText();
     }
 
     public String doLoginWithInvalidUserNameAndValidPassword(String username, String password) throws InterruptedException {
-        StringBuilder userName = new StringBuilder(String.valueOf(txtUserName));
-        length = userName.length();
-        for (i = 0; i <= length; i++) {
-            txtUserName.sendKeys(Keys.BACK_SPACE);
-        }
         txtUserName.sendKeys(username);
-        StringBuilder pass = new StringBuilder(String.valueOf(txtPassword));
-        length = pass.length();
-        for (i = 0; i <= length; i++) {
-            txtPassword.sendKeys(Keys.BACK_SPACE);
-        }
+        Thread.sleep(2000);
         txtPassword.sendKeys(password);
         btnLogin.click();
         return errorMsg.getText();
     }
 
     public String doLoginWithValidUserNameAndInvalidPassword(String username, String password) throws InterruptedException {
-        StringBuilder userName = new StringBuilder(String.valueOf(txtUserName));
-        length = userName.length();
-        for (i = 0; i <= length; i++) {
-            txtUserName.sendKeys(Keys.BACK_SPACE);
-        }
         txtUserName.sendKeys(username);
-        StringBuilder pass = new StringBuilder(String.valueOf(txtPassword));
-        length = pass.length();
-        for (i = 0; i <= length; i++) {
-            txtPassword.sendKeys(Keys.BACK_SPACE);
-        }
+        Thread.sleep(2000);
         txtPassword.sendKeys(password);
         btnLogin.click();
         return errorMsg.getText();
@@ -141,5 +119,11 @@ public class LoginPage {
         Thread.sleep(1000);
         btnResetPassword.click();
         return lblResetPasswordSuccessfullyMsg.getText();
+    }
+    public void clearCreds (){
+        txtUserName.sendKeys(Keys.CONTROL,"a");
+        txtUserName.sendKeys(Keys.BACK_SPACE);
+        txtPassword.sendKeys(Keys.CONTROL,"a");
+        txtPassword.sendKeys(Keys.BACK_SPACE);
     }
 }
